@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <title>RPC - RabbitMQ</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href='custom.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-xl-8 offset-xl-2 py-5">
+
+                <h1>RPC - RabbitMQ - JSON
+                </h1>
+
+                <p class="lead">Envie uma mensagem RPC JSON
+
+
+                <form id="contact-form" name="contact-form" method="post" action="rpc.php" role="form">
+
+                    <div class="controls">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nome">Nome *</label>
+                                    <input id="nome" name="nome" type="text" maxlength="60" class="form-control" placeholder="Nome do Contato *" required="required" data-error="Nome do Contato é Obrigatório!.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="telefone">Telefone *</label>
+                                    <input id="telefone" name="telefone" type="text" maxlength="15" class="form-control" placeholder="Telefone do Contato *" required="required" data-error="Telefone do Contato é Obrigatório!.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>						
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="cpf">CPF *</label>
+                                    <input id="cpf" name="cpf" type="text" minlength=11 maxlength="11" class="form-control" placeholder="CPF *" required="required" data-error="CPF do Contato é Obrigatório!.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input id="email" name="email" type="email" maxlength="60" class="form-control" placeholder="mail@example.com *" required="required" data-error="Email do Contato é Obrigatório!.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">							
+                                <div class="form-group">
+									<input style="width:100%" type="submit" class="btn btn-success btn-send" value="Enviar Mensagem!">
+								</div>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted made">
+									
+                                    <strong>*</strong> Feito por Neliton Mateus <strong>*</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            <!-- /.8 -->
+
+        </div>
+        <!-- /.row-->
+
+    </div>
+    <!-- /.container-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+</body>
+
+</html>
